@@ -116,10 +116,10 @@ const Details = () => {
       )}
       <Modal visible={openModal} animationType="slide">
         <Container>
+          <Img source={{ uri: imageSrc }} resizeMode="contain" />
           <TouchOp onPress={closeModal}>
             <AntDesign name="close" size={45} color="black" />
           </TouchOp>
-          <Img source={{ uri: imageSrc }} resizeMode="contain" />
         </Container>
       </Modal>
     </Container>
